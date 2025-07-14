@@ -1,5 +1,4 @@
 import ProfileImage from "../assets/profile.png";
-import Resume from "../assets/Cale, Mark Adrian (Resume).pdf";
 import { Typewriter } from "react-simple-typewriter";
 import { ArrowDown, Github, Instagram, Facebook } from "lucide-react";
 
@@ -29,17 +28,10 @@ export const HeroSection = () => {
           </p>
 
           <a
-            href={Resume}
-            download
+            href="#contact"
             className="inline-block px-6 py-3 bg-primary mt-5 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition duration-300"
           >
-            Download CV
-          </a>
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 border-2 border-primary bg-transparent ml-3 mt-5 text-foreground font-semibold rounded-full shadow-md hover:bg-primary transition duration-300"
-          >
-            Contact Me
+            Get in touch
           </a>
           {/* Social Media Icons */}
           <div className="mt-6 flex justify-center md:justify-start md:ml-3 gap-6 text-foreground">
@@ -71,7 +63,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Right side: Profile Image */}
-        <div className="flex-1 flex justify-center opacity-0 animate-fade-in-right">
+        <div className=" hidden md:block flex-1 flex justify-center opacity-0 animate-fade-in-right">
           <div className="relative w-75 h-75 md:w-100 md:h-100 rounded-full p-1 bg-transparent ">
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary transition-transform duration-500 hover:scale-105 shadow-lg shadow-foreground">
               <img
