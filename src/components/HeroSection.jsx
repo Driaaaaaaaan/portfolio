@@ -29,9 +29,9 @@ export const HeroSection = () => {
 
           <a
             href="#contact"
-            className="inline-block px-6 py-3 bg-primary mt-5 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition duration-300"
+            className="inline-block px-6 py-3 bg-primary mt-5 text-white font-semibold rounded-full shadow-md hover:bg-primary transition duration-300"
           >
-            Get in touch
+            Contact me
           </a>
           {/* Social Media Icons */}
           <div className="mt-6 flex justify-center md:justify-start md:ml-3 gap-6 text-foreground">
