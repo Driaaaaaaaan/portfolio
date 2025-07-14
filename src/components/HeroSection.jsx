@@ -1,7 +1,8 @@
 import ProfileImage from "../assets/profile.png";
 import Resume from "../assets/Cale, Mark Adrian (Resume).pdf";
 import { Typewriter } from "react-simple-typewriter";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Instagram, Facebook } from "lucide-react";
+
 export const HeroSection = () => {
   return (
     <section
@@ -26,16 +27,7 @@ export const HeroSection = () => {
               delaySpeed={1500}
             />
           </p>
-          <p className="hidden md:block text-base md:text-lg text-foreground mb-6 md:mt-8 max-w-xl">
-            I’m a passionate{" "}
-            <strong className="text-foreground text-bold">
-              Bachelor of Science in Computer Science
-            </strong>{" "}
-            graduate with a strong foundation in web development. I specialize
-            in building responsive websites using HTML, CSS, JavaScript, PHP,
-            and Laravel. Eager to apply my skills in real-world projects and
-            grow professionally.
-          </p>
+
           <a
             href={Resume}
             download
@@ -43,6 +35,39 @@ export const HeroSection = () => {
           >
             Download CV
           </a>
+          <a
+            href="#contact"
+            className="inline-block px-6 py-3 border-2 border-primary bg-transparent ml-3 mt-5 text-foreground font-semibold rounded-full shadow-md hover:bg-primary transition duration-300"
+          >
+            Contact Me
+          </a>
+          {/* Social Media Icons */}
+          <div className="mt-6 flex justify-center md:justify-start md:ml-3 gap-6 text-foreground">
+            <a
+              href="https://github.com/Driaaaaaaaan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition duration-300"
+            >
+              <Github className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.facebook.com/driancale"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition duration-300"
+            >
+              <Facebook className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/driancale/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition duration-300"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
+          </div>
         </div>
 
         {/* Right side: Profile Image */}
@@ -52,7 +77,7 @@ export const HeroSection = () => {
               <img
                 src={ProfileImage}
                 alt="Mark Adrian Cale"
-                className="w-full h-full object-cover scale-115"
+                className="w-full h-full object-cover scale-130"
               />
             </div>
           </div>
