@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div className="container max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 z-10">
         {/* Left side: Text */}
         <div className="text-center md:text-left flex-1 opacity-0 animate-fade-in-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
             Hi, I'm <br />
             <span className="text-primary">Mark Adrian Cale</span>
           </h1>
